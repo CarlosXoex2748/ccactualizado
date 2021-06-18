@@ -1,0 +1,49 @@
+p.o {
+  position: absolute;
+  left: relative;
+  margin-top: -40px;
+  z-index: 1002;
+  margin-left: 20px;
+  transform: translate(-50%);
+}
+
+a.unico{
+  display: block;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+a.unico::after{
+  content: "";
+  background: white;
+	mix-blend-mode: exclusion;
+  width: calc(100% + 20px);
+  height: 0;
+  position: absolute;
+  bottom: -4px;
+  left: -10px;
+	transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+a:hover::after{
+	height: calc(100% + 8px)
+}
+
+.myButton {
+    background:url(/images/logos/ic_download.png) no-repeat;
+    background-size: 40px 40px;
+    cursor:pointer;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+.myButton:hover{
+  background:url(/images/logos/ic_download2.png) no-repeat;
+  color: orange;
+  background-size: 50px 50px;
+  width: 50px;
+  height: 50px;
+  transition: .5s;
+}

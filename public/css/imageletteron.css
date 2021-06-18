@@ -1,0 +1,28 @@
+#imagen {
+			width:auto;
+			height:375px;
+			position:relative;
+		}
+
+#imagen>div
+		{
+			position: relative;
+			bottom:25px;
+			color:#fff;
+			background-color:#000;
+			padding:2px 10px;
+			opacity:0.5;
+			font-weight:bold;
+		}
+
+  .letteron {
+    font-family: 'Playfair Display', Arial, sans-serif;
+  }
+
+
+  #rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px;
+
+}
