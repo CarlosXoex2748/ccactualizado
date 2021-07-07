@@ -82,4 +82,6 @@
         counter();
     });
 
+    AOS.init();
+
 })(jQuery);

@@ -2,7 +2,8 @@
 
 use App\Http\Controllers\Pages;
 use Illuminate\Support\Facades\Route;
-
+use App\Mail\ContactenosMailable;
+use Illuminate\Support\Facades\Mail;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,7 +19,7 @@ Route::get('/', [Pages::class, 'index'])->name('inicio');
 Route::get('/nosotros', [Pages::class, 'aboutus'])->name('nosotros');
 Route::get('/servicios', [Pages::class, 'services'])->name('servicios');
 Route::get('/contacto', [Pages::class, 'contacto'])->name('contacto');
-//experiencia == publicaciones
+Route::post('/contacto',[Pages::class, 'store'])->name('store');
 Route::get('/experiencia', [Pages::class, 'experiencia'])->name('experiencia');
 Route::get('/miespacio', [Pages::class, 'login'])->name('login');
 Route::get('/servicios/competitividad_desarrollo', [Pages::class, 'servicio_competitividad'])->name('servicio_competitividad');
@@ -29,6 +30,23 @@ Route::get('/servicios/legal', [Pages::class,'servicio_legal'])->name('servicio_
 Route::get('/servicios/tech', [Pages::class,'servicio_tech'])->name('servicio_tech');
 Route::get('/trabaja_con_nosotros',[Pages::class,'empleos'])->name('empleos');
 Route::get('/set_locale', [Pages::class, 'index'])->name('set_locale');
+Route::get('/visionmision', [Pages::class, 'visionmision'])->name('visionmision');
+Route::get('/publicaciones', [Pages::class, 'publicaciones'])->name('publicaciones');
+Route::get('/videos', [Pages::class, 'videos'])->name('videos');
+Route::get('/noticias', [Pages::class, 'noticias'])->name('noticias');
+Route::get('/qrverificado', [Pages::class, 'qrverificado'])->name('qrverificado');
+
+Route::get('/nosotros/rudylaguna', [Pages::class, 'rudylaguna'])->name('rudylaguna');
+
+Route::get('/nosotros/vivianasanchez', [Pages::class, 'vivianasanchez'])->name('vivianasanchez');
+
+Route::get('/nosotros/sergiovillegas', [Pages::class, 'sergiovillegas'])->name('sergiovillegas');
+
+Route::get('/nosotros/katherinepiedra', [Pages::class, 'katherine'])->name('katherine');
+
+Route::get('/nosotros/geneolarte', [Pages::class, 'geneolarte'])->name('geneolarte');
+
+Route::get('/nosotros/rudylaguna', [Pages::class, 'rudylaguna'])->name('rudylaguna');
 //Intranet 
 Route::post('/intranet', 'Auth\LoginController@authenticate')->name('intranet');
 //Route::post('/intranet', 'UserController@authenticate')->name('intranet');

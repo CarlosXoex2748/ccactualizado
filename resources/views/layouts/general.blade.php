@@ -29,6 +29,8 @@
   <link href="{{asset('css/style.css')}}" rel="stylesheet">
   <link href="{{asset('css/custom.css')}}" rel="stylesheet">
   <link href="{{asset('css/font.css')}}" rel="stylesheet">
+  <link href="{{asset('css/fontawesome.css')}}" rel="stylesheet">
+
   <!--Favicon-->
   <link rel="shortcut icon" href="{{asset('images/favicon.ico')}}" type="image/x-icon">
   <link rel="icon" href="{{asset('images/favicon.ico')}}" type="image/x-icon">
@@ -84,12 +86,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navigation">
           <ul class="navbar-nav ml-auto text-center">
-            <li class="nav-item @@about">
-              <a class="nav-link" href="{{route('nosotros')}}">Nosotros</a>
-            </li>
+            <li class="nav-item dropdown view">
+              <a class="nav-link dropdown-toggle" href="{{route('nosotros')}}" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Nosotros
+              </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{route('nosotros')}}">Nosotros</a>
+                <a class="dropdown-item" href="{{route('visionmision')}}">Misión Y Visión</a>
+                <a class="dropdown-item" href="{{route('experiencia')}}">Experiencia</a>
+              </div>
+            
             <li class="nav-item dropdown view">
               <a class="nav-link dropdown-toggle" href="{{route('servicios')}}" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">Servicios
+                aria-haspopup="true" aria-expanded="false">Nuestro Trabajo
           </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="{{route('servicio_competitividad')}}">Desarrollo y Competividad</a>
@@ -99,19 +109,28 @@
               <a class="dropdown-item" href="{{route('servicio_legal')}}">Legal</a>
               <a class="dropdown-item" href="{{route('servicio_tech')}}">CCD TECH</a>
             </div>
-            <li class="nav-item @@courses">
-              <a class="nav-link" href="{{route('experiencia')}}">Publicaciones</a>   
-            </li>
+            <li class="nav-item dropdown view">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Publicaciones
+              </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{route('publicaciones')}}">Articulos</a>
+                <a class="dropdown-item" href="{{route('noticias')}}">Noticias</a>
+                <a class="dropdown-item" href="{{route('videos')}}">Videos</a>
+              </div>
             <li class="nav-item dropdown view">
               <a class="nav-link dropdown-toggle" href="{{route('contacto')}}" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 Contacto
               </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{route('contacto')}}">Contactanos</a>
+                <a class="dropdown-item" href="{{route('contacto')}}">Contáctenos</a>
                 <a class="dropdown-item" href="{{route('empleos')}}">Trabaja Con Nosotros</a>
               </div>
+              
             <li class="nav-item"><a class="nav-link">|</a></li>
+
             <li class="nav-item dropdown view">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
@@ -138,7 +157,7 @@
     <div class="container">
       <div class="row" >
         <div class="col-12 text-center">
-            <h2  class="section-title">Contactenos</h2>
+            <h2  class="section-title">Contáctenos</h2>
         </div>
         <div class="col-12 col-md-6 col-lg-6 text-center">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.995785485305!2d-76.99139458473252!3d-12.11244059142359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ec9124d10b%3A0x2a27a88a61ba5adb!2sAv.+del+Pinar+124%2C+Lima+15038!5e0!3m2!1ses-419!2spe!4v1562865250978!5m2!1ses-419!2spe" 
@@ -150,7 +169,8 @@
               , Santiago de Surco, Lima (Lima)</li>
             <li class="mb-4 letra1"><a class="text-color letra1" href="#"><i class="fas fa-phone-alt"></i> (01) 688-3302</li>
             <li class="mb-4 letra1"><a class="text-color letra1" href="https://api.whatsapp.com/send?phone=51922753771"><i class="fab fa-whatsapp"></i> 922753771</li>
-            <li class="mb-4 letra1"><a class="text-color letra1" href="melissa.sanchez@ccdcompetitividad.com"><i class="far fa-envelope"></i> melissa.sanchez@ccdcompetitividad.com</li>
+            <li class="mb-4 letra1"><a class="text-color letra1" href="mailto: "><i class="far fa-envelope"></i> melissa.sanchez
+              @ccdcompetitividad.com</li>
         </ul>
         </div>
       </div>
@@ -185,18 +205,18 @@
         <div class="col-12 col-md-3 col-sm-4">
           <h4 class="text-white mb-5">CONTACTO</h4>
           <ul class="list-unstyled">
-            <li class="mb-4"><a class="text-color letra" href="{{route('contacto')}}">Contáctanos</a></li>
+            <li class="mb-4"><a class="text-color letra" href="{{route('contacto')}}">Contáctenos</a></li>
           </ul>
         </div>
         <!-- support -->
         <div class="col-12 col-md-3 col-sm-4">
           <h4 class="text-white mb-5">REDES SOCIALES</h4>
-          <ul class="mg-6 redes align-center">
-            <li class=" redes"><a class="text-color redes" href=""><i class="fas fa-envelope-square"></i></a></li>
+          <ul class="align-center">
+            <li class="redes"><a class="text-color redes" href=""><i class="fas fa-envelope-square"></i></a></li>
          
-            <li class=" redes"><a class="text-color redes" href=""><i class="fab fa-facebook-square"></i></a></li>
+            <li class="redes"><a class="text-color redes" href=""><i class="fab fa-facebook-square"></i></a></li>
          
-            <li class=" redes"><a class="text-color redes" href=""><i class="fab fa-whatsapp-square"></i></a></li>
+            <li class="redes"><a class="text-color redes" href="https://api.whatsapp.com/send?phone=51922753771"><i class="fab fa-whatsapp-square"></i></a></li>
           
             <li class="redes"><a class="text-color redes" href=""><i class="fab fa-linkedin"></i></a></li>
           
@@ -210,7 +230,26 @@
   <!-- copyright -->
 
 </footer>
-<!-- /footer -->
+<!-- /footer 
+<div class="social-container">
+  
+  <li><a href="#" role="button" class="social-button fb"><i class="fab fa-facebook-square"></i></a></li>
+  <li><a href="#" role="button" class="social-button wa"><i class="fab fa-whatsapp-square"></i></a></li>
+ 
+</div>-->
+<div class="social">
+  <ul>
+   
+    <li><a href="http://www.facebook.com/ " target="_blank" class="fa-facebook-fa-square"><i class="fab fa-facebook-square"></i></a></li>
+    
+    <li><a href="https://api.whatsapp.com/send?phone=51922753771" target="_blank" class="fa-whatsapp-wa"><i class="fab fa-whatsapp-square"></i></a></li>
+  
+    <li><a href="https://www.linkedin.com/in/centro-para-la-competitividad-y-el-desarrollo-434799214/" target="_blank" class="fa-linkedin-inn"><i class="fab fa-linkedin-in"></i></a></li>
+    
+    <li><a href="mailto:administracion@ccdcompetitividad.com" target="_blank" class="fa-envelope-em"><i class="fas fa-envelope-square"></i></a></li>
+  </ul>
+</div>
+
 
 <!-- jQuery -->
 <script src="{{asset('plugins/jQuery/jquery.min.js')}}"></script>

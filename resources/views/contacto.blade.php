@@ -1,7 +1,7 @@
 @extends('layouts.general')
 
-@section('content')
-
+@section('title','contacto')
+@section('content') 
 <!-- page title -->
 <section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
   <div class="container">
@@ -24,16 +24,19 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
-        <h2 class="section-title">Contáctanos</h2>
+        <h2 class="section-title">Contáctenos</h2>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-7 mb-4 mb-lg-0">
-        <form action="#">
+        <form action="{{route('store')}}" method="POST">
+          @csrf
           <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Nombre">
           <input type="email" class="form-control mb-3" id="mail" name="mail" placeholder="Correo">
           <input type="text" class="form-control mb-3" id="subject" name="subject" placeholder="Asunto">
-          <textarea name="message" id="message" class="form-control mb-3" placeholder="Mensaje"></textarea>
+          <textarea  id="message" class="form-control mb-3"name="message" placeholder="Mensaje"></textarea>
+          
+        
           <button type="submit" value="send" class="btn btn-primary">Enviar Mensaje</button>
         </form>
       </div>
@@ -42,6 +45,12 @@
         <a href="tel:+8802057843248" class="text-color h5 d-block">(01) 688-3302</a>
         <a href="mailto:yourmail@email.com" class="mb-5 text-color h5 d-block">melissa.sanchez@ccdcompetitividad.com</a>
         <p>Av. Del Pinar 124<br>Urb. Chacarilla del Estanque<br>SANTIAGO DE SURCO, LIMA (Lima)</p>
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Forma parte de nuestro grupo de colaboradores</h3>
+            <a href="{{route('empleos')}}" class="btn btn-primary">¡Postula Aquí!</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>

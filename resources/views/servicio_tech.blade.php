@@ -41,7 +41,7 @@
     <div class="row">
       <div class="col-12 mb-4">
         <h3>Sobre el servicio</h3>
-        <p></p>
+        <p>Página web para la competitividad y el desarrollo, aplicativos android e iOS para gestión y desarrollo y plataformas virtuales.</p>
       </div>
       <div class="col-12 mb-4">
         <h3 class="mb-3">Desarrollo Tecnológico</h3>

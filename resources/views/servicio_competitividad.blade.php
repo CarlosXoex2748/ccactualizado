@@ -22,7 +22,7 @@
     <div class="row">
       <div class="col-12 mb-4">
         <!-- course thumb -->
-        <img src="{{asset('images/services/estudios_economicos.jpg')}}" class="img-fluid w-100">
+        <img src="{{asset('images/fotos2021/trabajo.png')}}" class="img-fluid w-100">  
       </div>
     </div>
     <!-- course info -->

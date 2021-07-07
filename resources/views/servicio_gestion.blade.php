@@ -30,7 +30,7 @@
     </div>
     <!-- course info -->
     <div class="row align-items-center mb-5">
-      <div class="col-xl-3 order-1 col-sm-6 mb-4 mb-xl-0">
+      <div class="col-xl-5 order-1 col-sm-6 mb-4 mb-xl-0">
         <h2>Política y Gestión pública</h2>
       </div>
       <!--

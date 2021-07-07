@@ -304,7 +304,7 @@
         <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
           <h4 class="text-white mb-5">CONTACTO</h4>
           <ul class="list-unstyled">
-            <li class="mb-3"><a class="text-color letra" href="{{route('contacto')}}">Contáctanos</a></li>
+            <li class="mb-3"><a class="text-color letra" href="{{route('contacto')}}">Contáctenos</a></li>
           </ul>
         </div>
         <!-- support -->

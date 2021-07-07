@@ -49,6 +49,95 @@
     color: #333;
     border: 1px solid #ddd;
   }
+  /*
+.social-container{
+  position: fixed; 
+  z-index: 99;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.social-button{
+  position: relative; 
+  z-index: 99;
+  padding: .5rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: .5rem;
+  width: 50px;
+  height: 50px;
+  border: solid 1px #000;
+}
+.social-button:hover{
+  color: #fff;
+}
+.social-button.fb{
+  background-color: blue;
+}
+.social-button.wa{
+  background-color: green;
+}
 
-  
+*/
  
+.social {
+/* Bajamos la barra 200px de arriba a abajo */
+  position: fixed; 
+  z-index: 99;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+	.social ul li  .fa-facebook-fa-square {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li  .fa-whatsapp-wa{background: green;}
+	.social ul li  .fa-linkedin-inn {background: #81838d;}
+	.social ul li  .fa-envelope-em{background: #ae181f;}
+
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+
+  img.zoom-out{
+    transition: all .5s ease;
+  }
+  img.zoom-out:hover{
+    transform: scale(1.08);
+  }
+  .breadcrumb{
+    color: black;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    transition: 120ms linear;
+    background:none;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    margin-left: 12px;
+
+  }
