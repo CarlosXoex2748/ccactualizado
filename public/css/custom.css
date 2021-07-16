@@ -129,15 +129,4 @@
   img.zoom-out:hover{
     transform: scale(1.08);
   }
-  .breadcrumb{
-    color: black;
-    font-size: .875rem;
-    line-height: 1.25rem;
-    transition: 120ms linear;
-    background:none;
-    display: inline-block;
-    border-bottom: 2px solid transparent;
-    position: relative;
-    margin-left: 12px;
 
-  }

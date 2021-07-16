@@ -19,14 +19,8 @@
   <!-- Mision -->
   <section class="section-sm">
     <div class="container">
-      <div class="row">
-        <div class="col-12 mb-4">
-          <!-- course thumb -->
-          <img src="{{asset('images/images/img.workplace1.jpg')}}" class="img-fluid w-100">
-        </div>
-      </div>
   <div class="row align-items-center mb-5">
-  <div class="col-xl-5 order-1 col-sm-6 mb-4 mb-xl-0">
+  <div class="col-xl-4 order-1 col-sm-6 mb-4 mb-xl-0">
     <h2>Misión y Visión</h2>
   </div>
   <div class="col-12 mt-4 order-4">
@@ -34,21 +28,26 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-12 mb-6">
+
+  <div class="col-6 mb-4">
     <h3 class="mb-3">Misión</h3>
     <ul class="list-styled">
       <li>La misión debe estar definida en forma precisa y ser factible, la visión es una proyección a futuro que describe las aspiraciones de la organización. Suele ser más
            genérica que la misión, lo que la hace menos precisa y menos concreta.</li>
     </ul>
   </div>
-
-   <div class="col-12 mb-6">
+ <div class="col-6 mb-4">
+    <!-- course thumb -->
+    <img src="{{asset('images/images/img.workplace1.jpg')}}" class="img-fluid w-100 zoom-out" >
+  </div>
+   <div class="col-6 mb-4">
     <h3 class="mb-3">Visión</h3>
     <ul class="list-styled">
     <li>Convertirnos es una institución de referencia para la promoción y mejora de la educación y la cultura en entornos variados y cambiantes. Gracias a apostar por la innovación e
          intercambio de inspiración y creación de conocimiento educativo.</li>  
     </ul>
   </div>
+ 
 </div>
 </section>
 @endsection

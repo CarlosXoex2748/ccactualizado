@@ -6,7 +6,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <ul class="list-inline custom-breadcrumb">
+        <ul class="list-inline custom-Nosotros">
           <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="{{route('servicios')}}">Nuestros Servicios</a></li>
           <li class="list-inline-item text-white h3 font-secondary nasted">CCD TECH</li>
         </ul>
@@ -20,16 +20,11 @@
 <!-- section -->
 <section class="section-sm">
   <div class="container">
-    <div class="row">
-      <div class="col-12 mb-4">
-        <!-- course thumb -->
-        <img src="{{asset('images/services/srv_tech.jpg')}}" class="img-fluid w-100">
-      </div>
-    </div>
+  
     <!-- course info -->
     <div class="row align-items-center mb-5">
       <div class="col-xl-3 order-1 col-sm-6 mb-4 mb-xl-0">
-        <h2>CCD Tech</h2>
+        <h2 data-aos="fade-right" data-aos-duration="2000">CCD Tech</h2>
       </div>
 
       <!-- border -->
@@ -40,18 +35,22 @@
     <!-- course details -->
     <div class="row">
       <div class="col-12 mb-4">
-        <h3>Sobre el servicio</h3>
-        <p>Página web para la competitividad y el desarrollo, aplicativos android e iOS para gestión y desarrollo y plataformas virtuales.</p>
+        <h3 data-aos="fade-right" data-aos-duration="2000">Sobre el servicio</h3>
+        <p data-aos="fade-right" data-aos-duration="2000">Página web para la competitividad y el desarrollo, aplicativos android e iOS para gestión y desarrollo y plataformas virtuales.</p>
       </div>
-      <div class="col-12 mb-4">
+      <div class="col-6 mb-4"data-aos="fade-right" data-aos-duration="2000">
         <h3 class="mb-3">Desarrollo Tecnológico</h3>
-        <ul class="list-styled">
+        <ul class="list-styled" data-aos="fade-right" data-aos-duration="2000">
           <li>Página web para la competitividad y el desarrollo.</li>
           <li>Aplicativos android e iOS para gestión y desarrollo.</li>
           <li>Plataformas virtuales.</li>
         </ul>
       </div>
-
+    <div class="col-6 mb-4 " data-aos="zoom-in" data-aos-duration="2000">
+        <!-- course thumb -->
+        <img src="{{asset('images/services/srv_tech.jpg')}}" class="img-fluid w-75 zoom-out">
+      </div>
+    </div>
 
 
     </div>

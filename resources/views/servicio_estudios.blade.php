@@ -6,7 +6,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <ul class="list-inline custom-breadcrumb">
+        <ul class="list-inline custom-Nosotros">
           <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="{{route('servicios')}}">Nuestros Servicios</a></li>
           <li class="list-inline-item text-white h3 font-secondary nasted">Estudios Económicos</li>
         </ul>
@@ -21,54 +21,13 @@
 <!-- section -->
 <section class="section-sm">
   <div class="container">
-    <div class="row">
-      <div class="col-12 mb-4">
-        <!-- course thumb -->
-        <img src="{{asset('images/services/estudios_economicos.jpg')}}" class="img-fluid w-100">
-      </div>
-    </div>
-    <!-- course info -->
-    <div class="row align-items-center mb-5">
-      <div class="col-xl-3 order-1 col-sm-6 mb-4 mb-xl-0">
-        <h2>Estudios Económicos</h2>
-      </div>
-      <!--
-      <div class="col-xl-6 order-sm-3 order-xl-2 col-12 order-2">
-        <ul class="list-inline text-xl-center">
-          <li class="list-inline-item mr-4 mb-3 mb-sm-0">
-            <div class="d-flex align-items-center">
-              <i class="ti-book text-primary icon-md mr-2"></i>
-              <div class="text-left">
-                <h6 class="mb-0">COURSES</h6>
-                <p class="mb-0">06 Month</p>
-              </div>
-            </div>
-          </li>
-          <li class="list-inline-item mr-4 mb-3 mb-sm-0">
-            <div class="d-flex align-items-center">
-              <i class="ti-alarm-clock text-primary icon-md mr-2"></i>
-              <div class="text-left">
-                <h6 class="mb-0">DURATION</h6>
-                <p class="mb-0">03 Hours</p>
-              </div>
-            </div>
-          </li>
-          <li class="list-inline-item mr-4 mb-3 mb-sm-0">
-            <div class="d-flex align-items-center">
-              <i class="ti-wallet text-primary icon-md mr-2"></i>
-              <div class="text-left">
-                <h6 class="mb-0">FEE</h6>
-                <p class="mb-0">From: $699</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>-->
 
-      <!--
-      <div class="col-xl-3 text-sm-right text-left order-sm-2 order-3 order-xl-3 col-sm-6 mb-4 mb-xl-0">
-        <a href="#" class="btn btn-primary">Apply now</a>
-      </div>-->
+    <!-- course info -->
+    <div class="row align-items-center mb-2">
+      <div class="col-xl- order-1 col-sm-6 mb-4 mb-xl-0">
+        <h2 data-aos="fade-right" data-aos-duration="2000"> Estudios Económicos</h2>
+      </div>
+   
       <!-- border -->
       <div class="col-12 mt-4 order-4">
         <div class="border-bottom border-primary"></div>
@@ -77,35 +36,13 @@
     <!-- course details -->
     <div class="row">
       <div class="col-12 mb-4">
-        <h3>Sobre el servicio</h3>
-        <p></p>
-      </div><!--
-      <div class="col-12 mb-4">
-        <h3 class="mb-3">Elaboración de planes de competitividad</h3>
-        <div class="col-12 px-0">
-          <div class="row">
-            <div class="col-md-6">
-              <ul class="list-styled">
-                <li>Estudio de Competitividad de la Minería en el Perú.</li>
-                <li>Plan de Competitividad de Moquegua, Loreto, Piura (Sechura) y Apurímac.</li>
+        <h3  data-aos="fade-right" data-aos-duration="2000">Sobre el servicio</h3>
+        <p data-aos="fade-right" data-aos-duration="2000">Promover el desarrollo sostenible del país en base al principio de la competitividad y de esta forma mejorar la calidad de vida de los ciudadanos.</p>
+      </div>
 
-              </ul>
-            </div>
-
-            <div class="col-md-6">
-              <ul class="list-styled">
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>-->
-      <div class="col-12 mb-4">
-        <h3 class="mb-3">Desarrollo Económico</h3>
-        <ul class="list-styled">
+      <div class="col-6 mb-4">
+        <h3 class="mb-3"  data-aos="fade-right" data-aos-duration="2000">Desarrollo Económico</h3>
+        <ul class="list-styled"  data-aos="fade-right" data-aos-duration="2000">
           <li>Estudio sobre beneficios de la minería en Perú.</li>
           <li>Estudio sobre el desarrollo regional y nacional del Cinturón de cobre del Norte del Perú.</li>
           <li>Diseño y elaboración de indicadores estratégicos de competitividad e impacto de la Minería Peruana.</li>
@@ -113,8 +50,14 @@
           <li>Análisis sobre la potencialidad económica de la región San Martín.</li>
         </ul>
       </div>
+      
+        <div class="col-6 mb-4"  data-aos="zoom-in" data-aos-duration="2000" >
+          <!-- course thumb -->
+          <img src="{{asset('images/services/estudios_economicos.jpg')}}" class="img-fluid w-100 zoom-out">
+        </div>
+    
 
-       <div class="col-12 mb-4">
+       <div class="col-12 mb-4"  data-aos="fade-right" data-aos-duration="2000">
         <h3 class="mb-3">Sostenibilidad institucional</h3>
         <ul class="list-styled">
           <li>Elaboración de Manuales de Continuidad para la Superintendencia de Mercado de Valores: Planes de Continuidad del negocio

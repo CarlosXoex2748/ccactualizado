@@ -115,7 +115,6 @@
                 Publicaciones
               </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{route('publicaciones')}}">Articulos</a>
                 <a class="dropdown-item" href="{{route('noticias')}}">Noticias</a>
                 <a class="dropdown-item" href="{{route('videos')}}">Videos</a>
               </div>
@@ -159,11 +158,11 @@
         <div class="col-12 text-center">
             <h2  class="section-title">Contáctenos</h2>
         </div>
-        <div class="col-12 col-md-6 col-lg-6 text-center">
+        <div class="col-12 col-md-6 col-lg-6 text-center" data-aos="zoom-in" data-aos-duration="2000">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.995785485305!2d-76.99139458473252!3d-12.11244059142359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ec9124d10b%3A0x2a27a88a61ba5adb!2sAv.+del+Pinar+124%2C+Lima+15038!5e0!3m2!1ses-419!2spe!4v1562865250978!5m2!1ses-419!2spe" 
           width=100% height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-        <div class="col-12 col-md-6 col-lg-6">
+        <div class="col-12 col-md-6 col-lg-6" data-aos="flip-left" data-aos-duration="2000">
           <ul class="list-unstyled">
             <li class="mb-4 letra1"><a class="text-color letra1" href="https://goo.gl/maps/opa4MWF4P7NTudCQ9"><i class="fas fa-map-marked-alt"></i> Av. del Pinar 124, Urb. Chacarilla del Estanque
               , Santiago de Surco, Lima (Lima)</li>

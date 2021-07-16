@@ -4,6 +4,7 @@ use App\Http\Controllers\Pages;
 use Illuminate\Support\Facades\Route;
 use App\Mail\ContactenosMailable;
 use Illuminate\Support\Facades\Mail;
+use App\Http\Controllers\LogibController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,7 +47,9 @@ Route::get('/nosotros/katherinepiedra', [Pages::class, 'katherine'])->name('kath
 
 Route::get('/nosotros/geneolarte', [Pages::class, 'geneolarte'])->name('geneolarte');
 
-Route::get('/nosotros/rudylaguna', [Pages::class, 'rudylaguna'])->name('rudylaguna');
+Route::get('/nosotros/alvaroorozco', [Pages::class, 'alvaroorozco'])->name('alvaroorozco');
+
+
 //Intranet 
 Route::post('/intranet', 'Auth\LoginController@authenticate')->name('intranet');
 //Route::post('/intranet', 'UserController@authenticate')->name('intranet');
@@ -55,6 +58,7 @@ Route::group(['middleware' => ['jwt.verify']], function() {
        /*AÑADE AQUI LAS RUTAS QUE QUIERAS PROTEGER CON JWT*/
  });
 
+ Route::get('logout', [LoginController::class],'index');
 Route::get('/logout', 'Auth\LoginController@logout');
 
 Route::get('/intranet', 'DocumentController@showYears')->middleware('auth');

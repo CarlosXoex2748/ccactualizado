@@ -512,12 +512,12 @@ a h4:hover {
   }
 }
 
-.custom-breadcrumb li.nasted {
+.custom-Nosotros li.nasted {
   position: relative;
   padding-left: 25px;
 }
 
-.custom-breadcrumb li.nasted::before {
+.custom-Nosotros li.nasted::before {
   position: absolute;
   font-family: "themify";
   content: "\e649";

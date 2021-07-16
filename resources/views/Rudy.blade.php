@@ -7,8 +7,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <ul class="list-inline custom-breadcrumb"> 
-              <li><a href="{{route('inicio')}}" data-aos="fade-left" class="breadcrumb">
+          <ul class="list-inline custom-Nosotros"> 
+              <li><a href="{{route('inicio')}}" data-aos="fade-left" class="Nosotros">
              Volver a  Bienvenido a CCD</a></li>
             <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="">Rudy Laguna</a></li>
             <li class="list-inline-item text-white h3 font-secondary nasted">Director General del CCD</li>

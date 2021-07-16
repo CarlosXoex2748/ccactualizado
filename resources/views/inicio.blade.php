@@ -82,7 +82,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6 order-2 order-md-1">
-        <h2 class="section-title" data-aos="fade-down" data-aos-duration="2000">¿Quiénes somos?</h2>
+        <h2 class="section-title" data-aos="fade-down" data-aos-duration="2000">Nosotros</h2>
         <div data-aos="fade-right">
           <p align="justify-content-center">En Centro para la Competitividad y el Desarrollo (CCD) nos distinguimos por ser una institución en donde tenemos como objetivo promover la competitividad y el desarrollo del país a través del diseño y el apoyo en la implementación y gestión de políticas públicas.
           También trabajamos lo relacionado con la atención de la agenda social, medioambiental y promoción de la inversión privada.
@@ -111,9 +111,11 @@
         <div class="d-flex align-items-center section-title justify-content-between">
           <h2 class="mb-0 text-nowrap mr-3" data-aos="fade-up" data-aos-duration="2000">Nuestros Servicios</h2>
           <div class="border-top w-100 border-primary d-none d-sm-block"></div>
+          <!-- courses 
           <div>
             <a href="{{route('servicios')}}" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block" data-aos="fade-left">Ver todos</a>
           </div>
+        -->
         </div>
       </div>
     </div>
@@ -266,15 +268,15 @@
 <!-- success story -->
 <section class="section bg-cover" data-background="images/backgrounds/office-2.jpg">
   <div class="container">
-    <div class="row" >
+    <div class="row" data-aos="fade-right" data-aos-duration="2000">
       <div class="col-lg-6 col-sm-4 position-relative success-video" data-aos="fade-right" data-aos-duration="2000" >
-        <a class="play-btn venobox" href="https://youtu.be/nA1Aqp0sPQo" data-vbtype="video" data-aos="fade-right " data-aos-duration="2000">
-          <i class="ti-control-play"></i>
+        <a class="play-btn venobox" href="https://youtu.be/nA1Aqp0sPQo" data-vbtype="video" data-aos="fade-right" data-aos-duration="2000">
+          <i class="ti-control-play"data-aos="fade-right" data-aos-duration="2000"></i>
         </a>
       </div>
       <div class="col-lg-6 col-sm-8">
         <div class="bg-white p-5" data-aos="fade-left" data-aos-duration="2000">
-          <h2 class="section-title" >¿Quiénes somos?</h2>
+          <h2 class="section-title" >Nosotros</h2>
           <p>En Centro para la Competitividad y el Desarrollo (CCD) nos distinguimos por ser una institución en donde tenemos como objetivo promover la competitividad y el desarrollo del país a través del diseño y el apoyo en la implementación y gestión de políticas públicas.
           </p>
           <p>Disponemos de un equipo conformado por profesionales con larga trayectoria en el sector público y con amplia experiencia en el diseño e implementación de políticas públicas.</p>
@@ -334,7 +336,7 @@
               <h4 class="card-title">Viviana Sánchez</h4>
             </a>
             <a href="{{asset('nosotros/vivianasanchez')}}">
-            <p>Abogada de la Pontificia Universidad Católica del Perú y Máster (LLM) de Georgetown University.  </p>
+            <p>Jefa del Area Legal </p>
 
           </div>
       </div>
@@ -350,14 +352,17 @@
       <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
         <div class="card border-0 rounded-0 hover-shadow" data-aos="fade-up" data-aos-duration="2000">
           <img class="card-img-top rounded-0" src="{{asset('images/teachers/sergio_villegas.jpg')}}" alt="teacher" height="270px">
-          <div class="card-body">
-            
+            <a href="{{asset('nosotros/sergiovillegas')}}">
+              <div class="card-body">
             <div class="d-flex flex-column justify-content-between text-center">
+           
             <a>
+              <a href="{{asset('nosotros/sergiovillegas')}}">
               <h4 class="card-title">Sergio Villegas</h4>
             </a>
+            <a href="{{asset('nosotros/sergiovillegas')}}">
             <p>Jefe de Proyectos del Centro para la Competitividad y el Desarrollo (CCD).</p>
-        
+            </a>
           </div>
           </div>
         </div>
@@ -372,12 +377,16 @@
       <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
         <div class="card border-0 rounded-0 hover-shadow" data-aos="fade-up" data-aos-duration="2000">
           <img class="card-img-top rounded-0" src="{{asset('images/teachers/img_alvaro.jpg')}}" alt="teacher" height="270px">
-          <div class="card-body">
-            <a>
+          <a href="{{asset('nosotros/alvaroorozco')}}">
+            <div class="card-body">
+            
+            <div class="d-flex flex-column justify-content-between text-center">
+            <a href="{{asset('nosotros/alvaroorozco')}}">
               <h4 class="card-title">Álvaro Orozco</h4>
             </a>
+            <a href="{{asset('nosotros/alvaroorozco')}}">
             <p>Jefe de proyectos en competitividad y desarrollo del CCD.</p>
-
+            </div>
           </div>
         </div>
         <br>
@@ -389,8 +398,12 @@
       <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
         <div class="card border-0 rounded-0 hover-shadow" data-aos="fade-up" data-aos-duration="2000">
           <img class="card-img-top rounded-0" src="{{asset('images/teachers/img_katherine.jpg')}}" alt="teacher" height="270px">
+          <a href="{{asset('nosotros/katherinepiedra')}}">
           <div class="card-body">
+            
+            <div class="d-flex flex-column justify-content-between text-center">
             <a>
+              <a href="{{asset('nosotros/katherinepiedra')}}">
               <h4 class="card-title">Katherine Piedra</h4>
             </a>
             <p>Jefe de proyectos en competitividad y desarrollo y en políticas públicas del Centro para la Competitividad y el Desarrollo (CCD).</p>
@@ -402,6 +415,7 @@
               <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
             </ul>-->
           </div>
+          </div>
         </div>
         <br>
         <br>
@@ -412,12 +426,16 @@
       <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
         <div class="card border-0 rounded-0 hover-shadow" data-aos="fade-up" data-aos-duration="2000">
           <img class="card-img-top rounded-0" src="{{asset('images/teachers/img_gene.jpg')}}" alt="teacher" height="270px">
+          <a href="{{asset('nosotros/geneolarte')}}">
+           
           <div class="card-body">
-            <a>
+            <div class="d-flex flex-column justify-content-between text-center">
+            <a href="{{asset('nosotros/geneolarte')}}">
               <h4 class="card-title">Gene Eduardo Olarte</h4>
             </a>
             <p>Consultor económico en promoción empresarial del Centro para la Competitividad y el Desarrollo (CCD). </p>
 
+          </div>
           </div>
         </div>
         <br>
@@ -434,89 +452,4 @@
   <div>
 
 </section>
-
-<!-- events -->
-
-<!-- -->
-
-<!-- /events -->
-<!-- /teachers -->
-
-<!-- blog -->
-<!--
-<section class="section pt-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="section-title">Latest News</h2>
-      </div>
-    </div>
-    <div class="row justify-content-center">
- blog post
-
-  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="Post thumb">
-      <div class="card-body">
-       post meta
-        <ul class="list-inline mb-3">
-         post date
-          <li class="list-inline-item mr-3 ml-0">August 28, 2019</li>
-          author
-          <li class="list-inline-item mr-3 ml-0">By Jonathon</li>
-        </ul>
-        <a href="blog-single.html">
-          <h4 class="card-title">The Expenses You Are Thinking.</h4>
-        </a>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-        <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
-      </div>
-    </div>
-  </article>
-  blog post
-  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/blog/post-2.jpg" alt="Post thumb">
-      <div class="card-body">
-       post meta
-        <ul class="list-inline mb-3">
-          post date
-          <li class="list-inline-item mr-3 ml-0">August 13, 2019</li>
-           author
-          <li class="list-inline-item mr-3 ml-0">By Jonathon Drew</li>
-        </ul>
-        <a href="blog-single.html">
-          <h4 class="card-title">Tips to Succeed in an Online Course</h4>
-        </a>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-        <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
-      </div>
-    </div>
-  </article>
-   blog post
-  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb">
-      <div class="card-body">
-         post meta
-        <ul class="list-inline mb-3">
-           post date
-          <li class="list-inline-item mr-3 ml-0">August 24, 2018</li>
-           author
-          <li class="list-inline-item mr-3 ml-0">By Alex Pitt</li>
-        </ul>
-        <a href="blog-single.html">
-          <h4 class="card-title">Orientation Program for the new students</h4>
-        </a>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-        <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
-      </div>
-    </div>
-  </article>
-</div>
-  </div>
-</section>-->
-<!-- /blog -->
-<!-- logo -->
-<!--<a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/banner/logoccd.png" alt="logo"></a>-->
 @endsection
