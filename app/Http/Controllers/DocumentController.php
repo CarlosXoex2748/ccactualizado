@@ -5,11 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-use App\User;
-use App\Year;
-use App\Project;
-use App\Typedocument;
-use App\Document;
+use App\Models\User;
+use App\Models\Year;
+use App\Models\Project;
+use App\Models\Typedocument;
+use App\Models\Document;
 
 
 class DocumentController extends Controller

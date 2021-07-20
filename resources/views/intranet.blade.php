@@ -37,7 +37,10 @@
                       </a>
                   </li>
                   <li class="active">
-                      <a href="/logout">
+                      <form id="logout-form" action="{{route('logout')}}" method="post">
+                        @csrf
+                      </form>
+                      <a href="#" onclick="document.getElementById('logout-form').submit()">
                           <img src="../images/logos/ic_logout.png" style="width:25px; height:25px; margin-right:5px;"></i><span>Salir</span>
                       </a>
                   </li>

@@ -5,13 +5,13 @@
 <section class="page-title-section " data-background="{{asset('images/fotos2021/fondo01.png')}}">
    
     <div class="container">
-      <div class="row">
-        <div class="col-md-8">
+      <div class="row justify-content-end">
+        <div class="col-md-6 col-lg-5 col-xl-4">
           <ul class="list-inline custom-Nosotros"> 
-              <li><a href="{{route('inicio')}}" data-aos="fade-left" class="Nosotros">
+            <li><a href="{{route('inicio')}}" data-aos="fade-left">
              Volver a  Bienvenido a CCD</a></li>
-            <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="">Rudy Laguna</a></li>
-            <li class="list-inline-item text-white h3 font-secondary nasted">Director General del CCD</li>
+            <li class="list-inline-item"><h3 class="h2 text-primary font-secondary">Rudy Laguna</h3></li>
+            <li class="list-inline-item h4 font-secondary nasted">Director General del CCD</li>
         </ul>      
         </div>
       </div>

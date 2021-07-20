@@ -1,10 +1,9 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\Pages;
 use Illuminate\Support\Facades\Route;
-use App\Mail\ContactenosMailable;
-use Illuminate\Support\Facades\Mail;
-use App\Http\Controllers\LogibController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,7 +21,6 @@ Route::get('/servicios', [Pages::class, 'services'])->name('servicios');
 Route::get('/contacto', [Pages::class, 'contacto'])->name('contacto');
 Route::post('/contacto',[Pages::class, 'store'])->name('store');
 Route::get('/experiencia', [Pages::class, 'experiencia'])->name('experiencia');
-Route::get('/miespacio', [Pages::class, 'login'])->name('login');
 Route::get('/servicios/competitividad_desarrollo', [Pages::class, 'servicio_competitividad'])->name('servicio_competitividad');
 Route::get('/servicios/gestion_politica', [Pages::class, 'servicio_gestion'])->name('servicio_gestion');
 Route::get('/servicios/estudios_economicos', [Pages::class,'servicio_estudios'])->name('servicio_estudios');
@@ -51,17 +49,16 @@ Route::get('/nosotros/alvaroorozco', [Pages::class, 'alvaroorozco'])->name('alva
 
 
 //Intranet 
-Route::post('/intranet', 'Auth\LoginController@authenticate')->name('intranet');
+// Route::post('/intranet', [LoginController::class, 'authenticate'])->name('intranet');
 //Route::post('/intranet', 'UserController@authenticate')->name('intranet');
 
 Route::group(['middleware' => ['jwt.verify']], function() {
        /*AÑADE AQUI LAS RUTAS QUE QUIERAS PROTEGER CON JWT*/
  });
 
- Route::get('logout', [LoginController::class],'index');
-Route::get('/logout', 'Auth\LoginController@logout');
-
-Route::get('/intranet', 'DocumentController@showYears')->middleware('auth');
+Route::get('/intranet', [DocumentController::class,'showYears'])->middleware('auth');
 Route::get('/intranet/{name}', 'DocumentController@showProjects')->middleware('auth');
 Route::get('/intranet/{name}/{abb_project}', 'DocumentController@showTypeDocuments')->middleware('auth');
 Route::get('/intranet/{name}/{abb_project}/{nametype}', 'DocumentController@showDocuments')->middleware('auth');
+
+Auth::routes(['register' => false]);
